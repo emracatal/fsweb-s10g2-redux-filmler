@@ -38,7 +38,7 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 - [4 x] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
   MovieList component'i içerisindeki `movies` datası redux store'dan çekilmelidir. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
 
-- [5 ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
+- [5x ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
    `appTitle` değeri redux store'dan çekilmelidir.
 
 - [6 ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
