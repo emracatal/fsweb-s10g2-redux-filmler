@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const AppHeader = (props) => {
-  const appTitle = "";
+  // - [5 ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**
+  //  `appTitle` değeri redux store'dan çekilmelidir.
+  const appTitle = useSelector((store) => store.appTitle);
   const displayFavorites = true;
 
   return (
