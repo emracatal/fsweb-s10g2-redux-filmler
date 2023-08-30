@@ -14,11 +14,11 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 ### Görev 1: Proje Kurulumu
 
-- [ ] Forklayın.
-- [ ] Klonlayın
-- [ ] Ana dizine gidin
-- [ ] `npm install`
-- [ ] `npm start`
+- [X ] Forklayın.
+- [X ] Klonlayın
+- [X ] Ana dizine gidin
+- [X ] `npm install`
+- [ X] `npm start`
 
 ### Görev 2: Proje Gereksinimleri
 
@@ -26,31 +26,31 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 > _DOM ve film reducer fonksiyonu sizin için hazırlandı, ancak onu redux'a bağlamak size bırakıldı._
 
-- [ ] Redux store'u yaratmak için `createStore` fonksiyonunu kullanın.
-- [ ] Redux store'u React uygulaması ile ilişkilendirmek için `Provider` bileşenini kullanın.
+- [1x ] Redux store'u yaratmak için `createStore` fonksiyonunu kullanın.
+- [2x ] Redux store'u React uygulaması ile ilişkilendirmek için `Provider` bileşenini kullanın.
 
 #### Film reducerını bağlamak
 
 > _`src/reducers/movieReducers.js` içerisinde `reducer` fonksiyonu ve `initialState` öntanımlı olarak gelmektedir. Filmler datası `initialState` içerisine eklenmiştir._
 
-- [ ] `movieReducer.js` içindeki `initialState` reducer'ın başlangıç değeri olarak atanmalıdır.
+- [ 3x] `movieReducer.js` içindeki `initialState` reducer'ın başlangıç değeri olarak atanmalıdır.
 
-- [ ] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
-      MovieList component'i içerisindeki `movies` datası redux store'dan çekilmelidir. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
+- [4 x] **MovieList bileşeni, tüm filmlerimizi ekrana yazdırır.**
+  MovieList component'i içerisindeki `movies` datası redux store'dan çekilmelidir. `react-redux` içerisinden `useSelector` hookunu kullanarak `movies` değerine erişin.
 
-- [ ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
-      `appTitle` değeri redux store'dan çekilmelidir.
+- [5 ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
+   `appTitle` değeri redux store'dan çekilmelidir.
 
-- [ ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
+- [6 ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
 - [ ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir kod bloğu olduğunu ve `movieActions` dosyası içerisinde ilgili **action generator**'ın zaten mevcut olduğunu unutmayın.
 
-- **Silme Action'ı: Movie componentinde** 
+- **Silme Action'ı: Movie componentinde**
   - Silme işleminin tetiklemesi gereken HTML öğesini bulun ve `event handler` oluşturup ve bu DOM öğesine bağlayın.
-  - Bu handler içerisinde Filmin `id` değeri ile `deleteMovie` action'ını tetiklemek için `dispatch` edin. 
-  - Sonra kullanıcıyı `push('/movies')` komutunu kullanarak filmler sayfasına yönlendirin. 
+  - Bu handler içerisinde Filmin `id` değeri ile `deleteMovie` action'ını tetiklemek için `dispatch` edin.
+  - Sonra kullanıcıyı `push('/movies')` komutunu kullanarak filmler sayfasına yönlendirin.
   - **(Bu kısımda, `useParams` ile aldığınız `id` değerinin `string` olduğunu ve `movieReducer` içerisindeki silme eyleminde buna dikkat etmeniz gerektiğini unutmayın!)**
 
 &nbsp;
@@ -71,7 +71,7 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 - [ ] Favoriler özelliği için bir **reducer dosyası** oluşturun. Bu dosyada kullanacağınız `initialState` objesine aşağıdaki değerlerini ekleyin:
 
   - `favorites { Film[] }`: Film nesnesini içeren bir dizi (başlangıç değeri `[]`).
-  - `displayFavorites { Boolean }`: Uygulamada favorilerin göster/gizle değerini tutan bir boolean (başlangıç değeri `false`). 
+  - `displayFavorites { Boolean }`: Uygulamada favorilerin göster/gizle değerini tutan bir boolean (başlangıç değeri `false`).
 
 - [ ] `switch` deyimine `default` case'ini ekleyin.
 
@@ -106,6 +106,6 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 - İçeriklerinizi stilleyin ❤️
 
-Tebrikler! 
+Tebrikler!
 &nbsp;
 Projeyi başarıyla tamamladın 👏👏👏

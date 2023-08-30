@@ -1,20 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 
-import App from './App';
-import { BrowserRouter } from 'react-router-dom';
-import './index.css';
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
 
-import { legacy_createStore as createStore } from 'redux';
-import { Provider } from 'react-redux';
-import reducer from './reducers';
+import { legacy_createStore as createStore } from "redux";
+import { Provider } from "react-redux";
+import reducer from "./reducers";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//- [1 ] Redux store'u yaratmak için `createStore` fonksiyonunu kullanın.
+const store = createStore(reducer);
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  //- [2 ] Redux store'u React uygulaması ile ilişkilendirmek için `Provider` bileşenini kullanın.
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
