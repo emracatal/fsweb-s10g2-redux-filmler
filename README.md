@@ -45,7 +45,7 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
-- [ ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir kod bloğu olduğunu ve `movieActions` dosyası içerisinde ilgili **action generator**'ın zaten mevcut olduğunu unutmayın.
+- [7? ] `movieReducers` dosyası içerisinde `deleteMovie` için yazılmış bir kod bloğu olduğunu ve `movieActions` dosyası içerisinde ilgili **action generator**'ın zaten mevcut olduğunu unutmayın.
 
 - **Silme Action'ı: Movie componentinde**
   - Silme işleminin tetiklemesi gereken HTML öğesini bulun ve `event handler` oluşturup ve bu DOM öğesine bağlayın.
