@@ -41,7 +41,7 @@ Bu projede, küçük bir film veritabanı içeren bir web uygulamasında çalı�
 - [5x ] **`AppHeader` component'i, başlık metnini görüntülemek için `appTitle` değişkenini kullanır.**  
    `appTitle` değeri redux store'dan çekilmelidir.
 
-- [6 ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
+- [6x ] Son olarak `Movie` componentindeki `movies` datası yine redux store içerisinden çekilmelidir.
 
 #### Sil ve Film Ekle eylemlerini bağlama
 
